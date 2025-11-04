@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { NAV_ITEMS, GROUP_NAME } from "./siteConfig";
 import { classNames } from "./utils";
+import { useMusic } from "./MusicProvider";
 
 type HeaderProps = {
   currentPath?: string;
@@ -16,55 +17,8 @@ export function Header({ currentPath = "" }: HeaderProps) {
     setIsMenuOpen(false);
   }, [currentPath]);
 
-  // Music player open state is persisted so user's choice survives page reloads
-  const [isMusicOpen, setIsMusicOpen] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem("mln133-music-open");
-      if (saved === "true") setIsMusicOpen(true);
-    } catch (e) {
-      // ignore (SSR or inaccessible localStorage)
-    }
-  }, []);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem("mln133-music-open", isMusicOpen ? "true" : "false");
-    } catch (e) {
-      // ignore
-    }
-  }, [isMusicOpen]);
-
-  // Play/pause the audio element when isMusicOpen changes. Modern browsers
-  // may block autoplay, so we try to call play() and silently ignore errors.
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    if (isMusicOpen) {
-      // try to play; catch any promise rejection (autoplay blocked)
-      const p = audio.play();
-      if (p && typeof p.then === "function") {
-        p.catch(() => {
-          // autoplay was prevented by the browser — user must interact to start
-        });
-      }
-    } else {
-      audio.pause();
-      audio.currentTime = 0;
-    }
-
-    return () => {
-      // pause when component unmounts
-      try {
-        audio.pause();
-      } catch (e) {
-        /* ignore */
-        console.log("🚀 ~ Header ~ e:", e);
-      }
-    };
-  }, [isMusicOpen]);
+  // Header controls menu and music via MusicProvider
+  const { isMusicOpen, toggleMusic } = useMusic();
 
   return (
     <header className="sticky top-0 z-50">
@@ -111,7 +65,7 @@ export function Header({ currentPath = "" }: HeaderProps) {
             <button
               type="button"
               className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white outline-none transition hover:border-[#f3c554]/40 hover:text-[#f3c554]"
-              onClick={() => setIsMusicOpen((v) => !v)}
+              onClick={() => toggleMusic()}
               aria-pressed={isMusicOpen}
               aria-label={isMusicOpen ? "Tắt nhạc" : "Bật nhạc"}
               title={isMusicOpen ? "Tắt nhạc" : "Bật nhạc"}
@@ -230,18 +184,7 @@ export function Header({ currentPath = "" }: HeaderProps) {
           </div>
         ) : null}
 
-        {/* Spotify embed player overlay */}
-        {isMusicOpen ? (
-          <div className="mt-2">
-            <audio
-              ref={audioRef}
-              src="/assets/music/Vững%20Bước%20Tương%20Lai.mp3"
-              loop
-              preload="auto"
-              autoPlay
-            />
-          </div>
-        ) : null}
+        {/* audio player is handled by MusicProvider (mounted at layout) */}
       </div>
     </header>
   );
