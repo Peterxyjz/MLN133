@@ -127,7 +127,7 @@ export function QuestionCard({
         </div>
         <button
           onClick={onToggleMark}
-          className={`flex-shrink-0 rounded-lg p-2 transition-colors ${
+          className={`shrink-0 rounded-lg p-2 transition-colors ${
             isMarked
               ? "bg-orange-500/20 text-orange-400 hover:bg-orange-500/30"
               : "bg-white/5 text-white/40 hover:bg-white/10 hover:text-white/60"

@@ -112,7 +112,7 @@ export default function PromoteDemocracyPage() {
               : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="space-y-8 backdrop-blur-sm bg-gradient-to-br from-black/60 to-black/40 p-8 rounded-3xl border border-white/10">
+          <div className="space-y-8 backdrop-blur-sm bg-linear-to-br from-black/60 to-black/40 p-8 rounded-3xl border border-white/10">
             <div className="inline-block">
               <div className="inline-flex items-center gap-2 rounded-full border-2 border-[#f3c554]/50 bg-[#f3c554]/10 px-5 py-2.5 backdrop-blur-sm">
                 <div className="h-2.5 w-2.5 rounded-full bg-[#f3c554] animate-pulse"></div>
@@ -123,13 +123,13 @@ export default function PromoteDemocracyPage() {
             </div>
 
             <h1 className="font-quicksand text-4xl font-extrabold text-white drop-shadow-2xl leading-tight md:text-5xl lg:text-6xl">
-              <span className="bg-gradient-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
+              <span className="bg-linear-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
                 Phát huy dân chủ xã hội chủ nghĩa ở Việt Nam hiện nay
               </span>
             </h1>
 
             <div className="space-y-4">
-              <div className="h-1 w-24 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full"></div>
+              <div className="h-1 w-24 bg-linear-to-r from-[#f3c554] to-transparent rounded-full"></div>
               <p className="font-quicksand text-lg font-medium text-[#d9d9d9]/90 leading-relaxed lg:text-xl">
                 Hiện nay, để phát huy dân chủ xã hội chủ nghĩa, Việt Nam cần tập
                 trung vào các nhiệm vụ trọng tâm sau:
@@ -138,7 +138,7 @@ export default function PromoteDemocracyPage() {
           </div>
 
           <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/30 to-transparent rounded-3xl blur-2xl"></div>
+            <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/30 to-transparent rounded-3xl blur-2xl"></div>
             <Image
               src="/assets/phat-huy/8a3eaafb85632e50cddab76e445c89a63b675e5a.png"
               alt="Tổng bí thư trong vòng tay nhân dân"
@@ -164,26 +164,26 @@ export default function PromoteDemocracyPage() {
             >
               {step.reverse ? (
                 <>
-                  <div className="lg:order-last backdrop-blur-sm bg-gradient-to-br from-black/60 to-black/40 p-10 rounded-3xl border border-white/10 shadow-2xl">
+                  <div className="lg:order-last backdrop-blur-sm bg-linear-to-br from-black/60 to-black/40 p-10 rounded-3xl border border-white/10 shadow-2xl">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f3c554] to-[#ffd966] shadow-lg">
+                      <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#f3c554] to-[#ffd966] shadow-lg">
                         <span className="font-inter text-2xl font-extrabold text-black">
                           {index + 1}
                         </span>
                       </div>
                       <h2 className="font-quicksand text-4xl lg:text-5xl font-extrabold text-white">
-                        <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                           {step.title}
                         </span>
                       </h2>
                     </div>
-                    <div className="h-1 w-20 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
+                    <div className="h-1 w-20 bg-linear-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
                     <p className="font-quicksand text-lg font-medium text-[#d9d9d9]/90 leading-relaxed">
                       {step.copy}
                     </p>
                   </div>
                   <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-l from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-l from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
                     <Image
                       src={step.image}
                       alt={step.title}
@@ -196,7 +196,7 @@ export default function PromoteDemocracyPage() {
               ) : (
                 <>
                   <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
                     <Image
                       src={step.image}
                       alt={step.title}
@@ -205,20 +205,20 @@ export default function PromoteDemocracyPage() {
                       className="relative h-auto w-full rounded-2xl shadow-2xl border-2 border-white/10 transform group-hover:scale-105 transition-all duration-500"
                     />
                   </div>
-                  <div className="backdrop-blur-sm bg-gradient-to-br from-black/60 to-black/40 p-10 rounded-3xl border border-white/10 shadow-2xl">
+                  <div className="backdrop-blur-sm bg-linear-to-br from-black/60 to-black/40 p-10 rounded-3xl border border-white/10 shadow-2xl">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f3c554] to-[#ffd966] shadow-lg">
+                      <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#f3c554] to-[#ffd966] shadow-lg">
                         <span className="font-inter text-2xl font-extrabold text-black">
                           {index + 1}
                         </span>
                       </div>
                       <h2 className="font-quicksand text-4xl lg:text-5xl font-extrabold text-white">
-                        <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                           {step.title}
                         </span>
                       </h2>
                     </div>
-                    <div className="h-1 w-20 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
+                    <div className="h-1 w-20 bg-linear-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
                     <p className="font-quicksand text-lg font-medium text-[#d9d9d9]/90 leading-relaxed">
                       {step.copy}
                     </p>
@@ -239,9 +239,9 @@ export default function PromoteDemocracyPage() {
               : "opacity-0 scale-95"
           }`}
         >
-          <div className="inline-block backdrop-blur-sm bg-gradient-to-br from-black/60 to-black/40 p-8 rounded-3xl border-2 border-[#f3c554]/30">
+          <div className="inline-block backdrop-blur-sm bg-linear-to-br from-black/60 to-black/40 p-8 rounded-3xl border-2 border-[#f3c554]/30">
             <h2 className="font-quicksand text-3xl lg:text-5xl font-extrabold text-white">
-              <span className="bg-gradient-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
+              <span className="bg-linear-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
                 3.1 Xây dựng Nhà nước pháp quyền
                 <br />
                 xã hội chủ nghĩa hiện nay
@@ -265,26 +265,26 @@ export default function PromoteDemocracyPage() {
             >
               {rule.reverse ? (
                 <>
-                  <div className="backdrop-blur-sm bg-gradient-to-br from-black/60 to-black/40 p-10 rounded-3xl border border-white/10 shadow-2xl">
+                  <div className="backdrop-blur-sm bg-linear-to-br from-black/60 to-black/40 p-10 rounded-3xl border border-white/10 shadow-2xl">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f3c554] to-[#ffd966] shadow-lg">
+                      <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#f3c554] to-[#ffd966] shadow-lg">
                         <span className="font-inter text-2xl font-extrabold text-black">
                           {index + 1}
                         </span>
                       </div>
                       <h3 className="font-quicksand text-4xl lg:text-6xl font-extrabold text-white">
-                        <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                           {rule.title}
                         </span>
                       </h3>
                     </div>
-                    <div className="h-1 w-20 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
+                    <div className="h-1 w-20 bg-linear-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
                     <p className="font-quicksand text-lg lg:text-xl font-medium text-[#d9d9d9]/90 leading-relaxed">
                       {rule.copy}
                     </p>
                   </div>
                   <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
                     <Image
                       src={rule.image}
                       alt={rule.title}
@@ -297,7 +297,7 @@ export default function PromoteDemocracyPage() {
               ) : (
                 <>
                   <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
                     <Image
                       src={rule.image}
                       alt={rule.title}
@@ -306,20 +306,20 @@ export default function PromoteDemocracyPage() {
                       className="relative h-auto w-full rounded-2xl shadow-2xl border-2 border-white/10 transform group-hover:scale-105 transition-all duration-500"
                     />
                   </div>
-                  <div className="backdrop-blur-sm bg-gradient-to-br from-black/60 to-black/40 p-10 rounded-3xl border border-white/10 shadow-2xl">
+                  <div className="backdrop-blur-sm bg-linear-to-br from-black/60 to-black/40 p-10 rounded-3xl border border-white/10 shadow-2xl">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f3c554] to-[#ffd966] shadow-lg">
+                      <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#f3c554] to-[#ffd966] shadow-lg">
                         <span className="font-inter text-2xl font-extrabold text-black">
                           {index + 1}
                         </span>
                       </div>
                       <h3 className="font-quicksand text-4xl lg:text-6xl font-extrabold text-white">
-                        <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                           {rule.title}
                         </span>
                       </h3>
                     </div>
-                    <div className="h-1 w-20 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
+                    <div className="h-1 w-20 bg-linear-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
                     <p className="font-quicksand text-lg lg:text-xl font-medium text-[#d9d9d9]/90 leading-relaxed">
                       {rule.copy}
                     </p>

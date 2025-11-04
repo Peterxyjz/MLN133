@@ -56,7 +56,7 @@ export function ResultScreen({
   return (
     <div className="mx-auto max-w-3xl space-y-8 animate-scale-in">
       {/* Result Card */}
-      <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-r  from-white/10 to-white/0 p-8 lg:p-12">
+      <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-linear-to-r  from-white/10 to-white/0 p-8 lg:p-12">
         <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#f3c554]/10 blur-3xl" />
 
         <div className="relative space-y-8 text-center">
@@ -116,7 +116,7 @@ export function ResultScreen({
             </div>
             <div className="h-3 overflow-hidden rounded-full bg-white/10">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-[#f3c554] to-[#ffd966] transition-all duration-1000 ease-out"
+                className="h-full rounded-full bg-linear-to-r from-[#f3c554] to-[#ffd966] transition-all duration-1000 ease-out"
                 style={{ width: `${result.accuracy}%` }}
               />
             </div>
@@ -154,7 +154,7 @@ export function ResultScreen({
 
         <button
           onClick={onRestart}
-          className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#f3c554] to-[#ffd966] px-6 py-4 font-semibold text-black transition-all hover:shadow-2xl hover:shadow-[#f3c554]/50"
+          className="flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#f3c554] to-[#ffd966] px-6 py-4 font-semibold text-black transition-all hover:shadow-2xl hover:shadow-[#f3c554]/50"
         >
           <svg
             className="h-5 w-5"
@@ -194,7 +194,7 @@ export function ResultScreen({
       </div>
 
       {/* Encouragement Message */}
-      <div className="rounded-xl border border-white/10 bg-gradient-to-r from-[#f3c554]/5 to-transparent p-6 text-center">
+      <div className="rounded-xl border border-white/10 bg-linear-to-r from-[#f3c554]/5 to-transparent p-6 text-center">
         <p className="text-sm leading-relaxed text-white/70">
           {result.accuracy >= 90
             ? "Xuất sắc! Bạn đã nắm vững kiến thức về Nhà nước và Dân chủ XHCN. Tiếp tục phát huy! 🎉"

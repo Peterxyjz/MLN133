@@ -66,7 +66,7 @@ export default function DidYouKnowPage() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/70 pointer-events-none"></div>
 
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -105,12 +105,12 @@ export default function DidYouKnowPage() {
             </div>
 
             <h1 className="font-quicksand text-5xl lg:text-7xl font-extrabold text-white drop-shadow-2xl mb-6">
-              <span className="bg-gradient-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
+              <span className="bg-linear-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
                 BẠN CÓ BIẾT?
               </span>
             </h1>
 
-            <div className="h-1.5 w-48 bg-gradient-to-r from-transparent via-[#f3c554] to-transparent rounded-full mx-auto mb-8"></div>
+            <div className="h-1.5 w-48 bg-linear-to-r from-transparent via-[#f3c554] to-transparent rounded-full mx-auto mb-8"></div>
 
             <p className="font-quicksand text-xl lg:text-2xl font-medium text-[#d9d9d9]/90 max-w-3xl mx-auto leading-relaxed">
               Ứng dụng công nghệ trong dân chủ và dịch vụ công
@@ -130,7 +130,7 @@ export default function DidYouKnowPage() {
         >
           {/* Image */}
           <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/30 via-blue-500/20 to-purple-500/20 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity"></div>
+            <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/30 via-blue-500/20 to-purple-500/20 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity"></div>
             <div className="relative overflow-hidden rounded-3xl border-4 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
               <Image
                 src="/assets/ban-co-biet/136910af473ad8296d0ad5b92f6b4e0952c37cb4.png"
@@ -139,7 +139,7 @@ export default function DidYouKnowPage() {
                 height={600}
                 className="h-auto w-full"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
             </div>
           </div>
 
@@ -150,7 +150,7 @@ export default function DidYouKnowPage() {
                 key={index}
                 onMouseEnter={() => setActiveCard(index)}
                 onMouseLeave={() => setActiveCard(null)}
-                className={`group relative backdrop-blur-sm bg-gradient-to-br ${
+                className={`group relative backdrop-blur-sm bg-linear-to-br ${
                   card.color
                 } p-6 rounded-2xl border-2 ${
                   card.borderColor
@@ -160,7 +160,7 @@ export default function DidYouKnowPage() {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Icon Badge */}
-                <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-[#f3c554] to-[#ffd966] rounded-2xl shadow-lg flex items-center justify-center text-3xl transform group-hover:rotate-12 transition-transform">
+                <div className="absolute -top-4 -left-4 w-16 h-16 bg-linear-to-br from-[#f3c554] to-[#ffd966] rounded-2xl shadow-lg flex items-center justify-center text-3xl transform group-hover:rotate-12 transition-transform">
                   {card.icon}
                 </div>
 
@@ -169,14 +169,14 @@ export default function DidYouKnowPage() {
                   <h3 className="font-inter text-xl lg:text-2xl font-extrabold text-white mb-3 group-hover:text-[#f3c554] transition-colors">
                     {card.title}
                   </h3>
-                  <div className="h-1 w-16 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full mb-4"></div>
+                  <div className="h-1 w-16 bg-linear-to-r from-[#f3c554] to-transparent rounded-full mb-4"></div>
                   <p className="font-quicksand text-base lg:text-lg font-medium text-[#d9d9d9]/90 leading-relaxed">
                     {card.content}
                   </p>
                 </div>
 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#f3c554]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-[#f3c554]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
               </div>
             ))}
           </div>
@@ -186,7 +186,7 @@ export default function DidYouKnowPage() {
         <section
           id="result"
           data-animate
-          className={`backdrop-blur-sm bg-gradient-to-br from-black/60 via-[#f3c554]/10 to-black/60 p-10 lg:p-16 rounded-3xl border-2 border-[#f3c554]/30 shadow-2xl transition-all duration-1000 delay-400 ${
+          className={`backdrop-blur-sm bg-linear-to-br from-black/60 via-[#f3c554]/10 to-black/60 p-10 lg:p-16 rounded-3xl border-2 border-[#f3c554]/30 shadow-2xl transition-all duration-1000 delay-400 ${
             isVisible["result"]
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
@@ -194,7 +194,7 @@ export default function DidYouKnowPage() {
         >
           <div className="flex items-start gap-6">
             {/* Icon */}
-            <div className="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-[#f3c554] to-[#ffd966] rounded-2xl shadow-lg flex items-center justify-center transform hover:rotate-12 transition-transform">
+            <div className="shrink-0 w-20 h-20 bg-linear-to-br from-[#f3c554] to-[#ffd966] rounded-2xl shadow-lg flex items-center justify-center transform hover:rotate-12 transition-transform">
               <svg
                 className="w-10 h-10 text-black"
                 fill="currentColor"
@@ -211,11 +211,11 @@ export default function DidYouKnowPage() {
             {/* Content */}
             <div className="flex-1">
               <h2 className="font-quicksand text-3xl lg:text-4xl font-extrabold text-white mb-4">
-                <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                   Kết quả đạt được:
                 </span>
               </h2>
-              <div className="h-1 w-24 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
+              <div className="h-1 w-24 bg-linear-to-r from-[#f3c554] to-transparent rounded-full mb-6"></div>
               <p className="font-quicksand text-xl lg:text-2xl font-medium text-[#d9d9d9]/90 leading-relaxed">
                 Nâng cao chất lượng dịch vụ công trong lĩnh vực y tế và giáo
                 dục; đảm bảo công bằng trong việc tiếp cận tri thức và chăm sóc
@@ -254,7 +254,7 @@ export default function DidYouKnowPage() {
           ].map((stat, index) => (
             <div
               key={index}
-              className="backdrop-blur-sm bg-gradient-to-br from-black/60 to-black/40 p-8 rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 text-center group"
+              className="backdrop-blur-sm bg-linear-to-br from-black/60 to-black/40 p-8 rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 text-center group"
             >
               <div className="text-5xl mb-4 transform group-hover:scale-125 transition-transform">
                 {stat.icon}

@@ -71,7 +71,7 @@ export default function SocialistStatePage() {
             </div>
 
             <h1 className="font-quicksand text-5xl font-extrabold text-white drop-shadow-2xl lg:text-7xl lg:leading-tight">
-              <span className="bg-gradient-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
+              <span className="bg-linear-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
                 NHÀ NƯỚC XÃ HỘI CHỦ NGHĨA
               </span>
             </h1>
@@ -80,7 +80,7 @@ export default function SocialistStatePage() {
               <h2 className="font-quicksand text-2xl font-bold text-[#ffd966] lg:text-3xl">
                 Sự ra đời của Nhà nước xã hội chủ nghĩa
               </h2>
-              <div className="h-1 w-24 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full"></div>
+              <div className="h-1 w-24 bg-linear-to-r from-[#f3c554] to-transparent rounded-full"></div>
             </div>
 
             <p className="font-quicksand text-lg font-medium text-[#d9d9d9]/90 leading-relaxed backdrop-blur-sm bg-black/20 p-6 rounded-xl border border-white/10 lg:text-xl">
@@ -94,7 +94,7 @@ export default function SocialistStatePage() {
 
           <div className="flex justify-center animate-slide-in-right">
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/30 to-[#ffd966]/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all"></div>
+              <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/30 to-[#ffd966]/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all"></div>
               <Image
                 src="/assets/nha-nuoc/0bdfa266c75b9f1c8241978bef018799391fa4cd.png"
                 alt="Nhà nước xã hội chủ nghĩa"
@@ -117,9 +117,9 @@ export default function SocialistStatePage() {
           }`}
         >
           <div className="flex justify-center md:order-last animate-scale-in">
-            <div className="space-y-6 backdrop-blur-sm bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 shadow-2xl">
+            <div className="space-y-6 backdrop-blur-sm bg-linear-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 shadow-2xl">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-1.5 bg-gradient-to-b from-[#f3c554] to-[#ffd966] rounded-full"></div>
+                <div className="h-12 w-1.5 bg-linear-to-b from-[#f3c554] to-[#ffd966] rounded-full"></div>
                 <h2 className="font-quicksand text-3xl font-bold text-[#f3c554] lg:text-4xl">
                   Bản chất của Nhà nước xã hội chủ nghĩa
                 </h2>
@@ -147,7 +147,7 @@ export default function SocialistStatePage() {
 
           <div className="flex justify-center">
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-l from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+              <div className="absolute -inset-4 bg-linear-to-l from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
               <Image
                 src="/assets/nha-nuoc/0dc05d56e6cc73f05c60cefde74f95e8ffdbf9f1.png"
                 alt="Hồ Chí Minh cùng công nhân"
@@ -172,11 +172,11 @@ export default function SocialistStatePage() {
           <div className="text-center mb-12 space-y-6">
             <div className="inline-block">
               <h2 className="font-quicksand text-4xl font-extrabold text-white lg:text-5xl mb-4">
-                <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                   Chức năng Nhà nước xã hội chủ nghĩa
                 </span>
               </h2>
-              <div className="h-1.5 bg-gradient-to-r from-transparent via-[#f3c554] to-transparent rounded-full"></div>
+              <div className="h-1.5 bg-linear-to-r from-transparent via-[#f3c554] to-transparent rounded-full"></div>
             </div>
 
             <p className="mt-6 font-quicksand text-xl font-medium text-[#d9d9d9]/90 max-w-4xl mx-auto leading-relaxed backdrop-blur-sm bg-black/30 p-6 rounded-xl border border-white/10">
@@ -194,7 +194,7 @@ export default function SocialistStatePage() {
                 className="group relative overflow-hidden rounded-2xl transform hover:scale-105 transition-all duration-500"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity"></div>
                 <div className="absolute inset-0 bg-[#f3c554]/20 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
                 <Image
                   src={src}
@@ -226,7 +226,7 @@ export default function SocialistStatePage() {
         >
           <div className="flex justify-center">
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/30 to-transparent rounded-3xl blur-2xl"></div>
+              <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/30 to-transparent rounded-3xl blur-2xl"></div>
               <Image
                 src="/assets/nha-nuoc/956fe3b5f2118e59e3d061758c77cd819ce18f66.png"
                 alt="Phát biểu trong hội trường"
@@ -237,11 +237,11 @@ export default function SocialistStatePage() {
             </div>
           </div>
 
-          <div className="backdrop-blur-sm bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 shadow-2xl">
+          <div className="backdrop-blur-sm bg-linear-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 shadow-2xl">
             <div className="font-quicksand text-xl font-medium text-[#d9d9d9]/90 leading-relaxed space-y-5 lg:text-2xl">
               <div className="flex items-start gap-4">
                 <svg
-                  className="w-8 h-8 text-[#f3c554] flex-shrink-0 mt-1"
+                  className="w-8 h-8 text-[#f3c554] shrink-0 mt-1"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -279,7 +279,7 @@ export default function SocialistStatePage() {
               : "opacity-0 -translate-x-10"
           }`}
         >
-          <div className="space-y-6 md:order-last backdrop-blur-sm bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 shadow-2xl">
+          <div className="space-y-6 md:order-last backdrop-blur-sm bg-linear-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 shadow-2xl">
             <div className="space-y-4">
               <div className="inline-flex items-center gap-3 bg-[#f3c554]/10 px-4 py-2 rounded-full border border-[#f3c554]/30">
                 <svg
@@ -300,7 +300,7 @@ export default function SocialistStatePage() {
               </div>
 
               <h2 className="font-quicksand text-3xl font-extrabold text-white lg:text-4xl">
-                <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                   Công cụ thực thi quyền làm chủ của nhân dân
                 </span>
               </h2>
@@ -338,7 +338,7 @@ export default function SocialistStatePage() {
 
           <div className="flex justify-center">
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-l from-[#f3c554]/30 to-transparent rounded-3xl blur-2xl"></div>
+              <div className="absolute -inset-4 bg-linear-to-l from-[#f3c554]/30 to-transparent rounded-3xl blur-2xl"></div>
               <Image
                 src="/assets/nha-nuoc/f2780d9086654d1f6434d66de101ec9fd7af9811.png"
                 alt="Người dân lao động"

@@ -65,7 +65,7 @@ export default function Home() {
       <Header currentPath="/" />
 
       {/* Hero Section with Carousel */}
-      <section className="relative h-[700px] overflow-hidden bg-gradient-to-br from-[#694030] via-[#4a2d22] to-[#2d1a14]">
+      <section className="relative h-[700px] overflow-hidden bg-linear-to-br from-[#694030] via-[#4a2d22] to-[#2d1a14]">
         {/* Animated Background Pattern */}
         <div
           className="absolute inset-0 opacity-20 animate-pulse"
@@ -106,7 +106,7 @@ export default function Home() {
                     </div>
 
                     <h1 className="font-quicksand text-4xl font-extrabold uppercase leading-[1.15] text-white drop-shadow-lg lg:text-6xl">
-                      <span className="bg-gradient-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
+                      <span className="bg-linear-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
                         {slide.title}
                       </span>
                     </h1>
@@ -119,7 +119,7 @@ export default function Home() {
                           style={{ animationDelay: `${i * 100}ms` }}
                         >
                           <svg
-                            className="w-5 h-5 text-[#f3c554] mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform"
+                            className="w-5 h-5 text-[#f3c554] mt-0.5 shrink-0 group-hover:scale-110 transition-transform"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -138,9 +138,9 @@ export default function Home() {
 
                     <Link
                       href={slide.link}
-                      className="group relative inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#f3c554] to-[#ffd966] px-8 py-4 font-inter text-base font-bold uppercase text-black transition-all hover:shadow-2xl hover:shadow-[#f3c554]/50 hover:-translate-y-1 active:translate-y-0 lg:px-10 lg:py-5 lg:text-lg overflow-hidden"
+                      className="group relative inline-flex items-center gap-3 rounded-xl bg-linear-to-r from-[#f3c554] to-[#ffd966] px-8 py-4 font-inter text-base font-bold uppercase text-black transition-all hover:shadow-2xl hover:shadow-[#f3c554]/50 hover:-translate-y-1 active:translate-y-0 lg:px-10 lg:py-5 lg:text-lg overflow-hidden"
                     >
-                      <span className="absolute inset-0 bg-gradient-to-r from-[#ffd966] to-[#f3c554] opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <span className="absolute inset-0 bg-linear-to-r from-[#ffd966] to-[#f3c554] opacity-0 group-hover:opacity-100 transition-opacity"></span>
                       <span className="relative z-10">KHÁM PHÁ</span>
                       <svg
                         className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform"
@@ -160,7 +160,7 @@ export default function Home() {
 
                   {/* Image */}
                   <div className="relative hidden lg:block">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-2xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-2xl"></div>
                     <div className="relative h-[500px] overflow-hidden rounded-2xl border-4 border-[#f3c554]/20 shadow-2xl transform hover:scale-105 transition-all duration-500">
                       <Image
                         src={slide.image}
@@ -169,7 +169,7 @@ export default function Home() {
                         className="object-cover"
                         priority={index === 0}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                     </div>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export default function Home() {
           <section className="group">
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="relative overflow-hidden rounded-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#f3c554]/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-linear-to-br from-[#f3c554]/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 <Image
                   src="/assets/home/0bdfa266c75b9f1c8241978bef018799391fa4cd.png"
                   alt="Lịch sử Việt Nam"
@@ -263,7 +263,7 @@ export default function Home() {
               </div>
 
               <div className="space-y-6">
-                <div className="inline-block rounded-full bg-gradient-to-r from-[#f3c554]/20 to-[#f3c554]/5 px-4 py-1.5">
+                <div className="inline-block rounded-full bg-linear-to-r from-[#f3c554]/20 to-[#f3c554]/5 px-4 py-1.5">
                   <span className="font-inter text-sm font-bold text-[#f3c554]">
                     1. NHÀ NƯỚC XÃ HỘI CHỦ NGHĨA
                   </span>
@@ -340,7 +340,7 @@ export default function Home() {
           <section className="group">
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="space-y-6 lg:order-2">
-                <div className="inline-block rounded-full bg-gradient-to-r from-[#f3c554]/20 to-[#f3c554]/5 px-4 py-1.5">
+                <div className="inline-block rounded-full bg-linear-to-r from-[#f3c554]/20 to-[#f3c554]/5 px-4 py-1.5">
                   <span className="font-inter text-sm font-bold text-[#f3c554]">
                     2. DÂN CHỦ XÃ HỘI CHỦ NGHĨA Ở VIỆT NAM
                   </span>
@@ -385,7 +385,7 @@ export default function Home() {
               </div>
 
               <div className="relative overflow-hidden rounded-2xl lg:order-1">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#f3c554]/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-linear-to-br from-[#f3c554]/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 <Image
                   src="/assets/home/eb99ea30633a5219e9dbae9a80ebe822f12fc77d.png"
                   alt="Chủ tịch Hồ Chí Minh và nhân dân"
@@ -401,7 +401,7 @@ export default function Home() {
           <section className="group">
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="relative overflow-hidden rounded-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#f3c554]/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-linear-to-br from-[#f3c554]/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 <Image
                   src="/assets/home/2628d9680cf4364ce3cef07c4903c2cc3ab2ee26.png"
                   alt="Chủ tịch Hồ Chí Minh với nông dân"
@@ -412,7 +412,7 @@ export default function Home() {
               </div>
 
               <div className="space-y-6">
-                <div className="inline-block rounded-full bg-gradient-to-r from-[#f3c554]/20 to-[#f3c554]/5 px-4 py-1.5">
+                <div className="inline-block rounded-full bg-linear-to-r from-[#f3c554]/20 to-[#f3c554]/5 px-4 py-1.5">
                   <span className="font-inter text-sm font-bold text-[#f3c554]">
                     3. PHÁT HUY DÂN CHỦ XÃ HỘI CHỦ NGHĨA Ở VIỆT NAM HIỆN NAY
                   </span>
@@ -429,7 +429,7 @@ export default function Home() {
 
                 <div className="space-y-3">
                   <div className="flex items-start gap-3 rounded-lg border border-white/10 bg-white/5 p-4">
-                    <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#f3c554]/20">
+                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f3c554]/20">
                       <span className="text-sm font-bold text-[#f3c554]">
                         1
                       </span>
@@ -444,7 +444,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3 rounded-lg border border-white/10 bg-white/5 p-4">
-                    <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#f3c554]/20">
+                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f3c554]/20">
                       <span className="text-sm font-bold text-[#f3c554]">
                         2
                       </span>
@@ -459,7 +459,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3 rounded-lg border border-white/10 bg-white/5 p-4">
-                    <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#f3c554]/20">
+                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f3c554]/20">
                       <span className="text-sm font-bold text-[#f3c554]">
                         3
                       </span>
@@ -486,7 +486,7 @@ export default function Home() {
           </section>
 
           {/* Bạn có biết Card */}
-          <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-[#1a1510] to-[#0a0a0a] p-8 lg:p-12">
+          <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-linear-to-br from-[#1a1510] to-[#0a0a0a] p-8 lg:p-12">
             <div className="absolute inset-0 bg-[url('/assets/common/dark-bg.png')] bg-cover bg-repeat opacity-20" />
             <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[#f3c554]/10 blur-3xl" />
 

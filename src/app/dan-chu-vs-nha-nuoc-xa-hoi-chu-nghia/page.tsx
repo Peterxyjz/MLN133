@@ -106,7 +106,7 @@ export default function DemocracyPage() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black/60 pointer-events-none"></div>
 
       <Header currentPath="/dan-chu-vs-nha-nuoc-xa-hoi-chu-nghia" />
 
@@ -132,7 +132,7 @@ export default function DemocracyPage() {
             </div>
 
             <h1 className="font-quicksand text-5xl font-extrabold text-white drop-shadow-2xl lg:text-7xl mb-8">
-              <span className="bg-gradient-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
+              <span className="bg-linear-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
                 DÂN CHỦ XÃ HỘI CHỦ NGHĨA
                 <br />Ở VIỆT NAM
               </span>
@@ -141,7 +141,7 @@ export default function DemocracyPage() {
 
           <div className="grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-black/30 p-8 rounded-3xl border border-white/10">
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+              <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
               <Image
                 src="/assets/dan-chu/e8073081f13a6b8f416dbaef61946c4e9bcb0329.png"
                 alt="Phát biểu trước nhân dân"
@@ -153,7 +153,7 @@ export default function DemocracyPage() {
 
             <div className="space-y-6">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-1.5 bg-gradient-to-b from-[#f3c554] to-[#ffd966] rounded-full"></div>
+                <div className="h-12 w-1.5 bg-linear-to-b from-[#f3c554] to-[#ffd966] rounded-full"></div>
                 <h2 className="font-quicksand text-4xl font-bold text-[#ffd966]">
                   SỰ RA ĐỜI, PHÁT TRIỂN
                 </h2>
@@ -174,7 +174,7 @@ export default function DemocracyPage() {
               key={section.titleLeading}
               id={`section-${index}`}
               data-animate
-              className={`grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-3xl border border-white/10 transition-all duration-1000 ${
+              className={`grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-linear-to-br from-black/40 to-black/20 p-8 rounded-3xl border border-white/10 transition-all duration-1000 ${
                 isVisible[`section-${index}`]
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-95"
@@ -183,7 +183,7 @@ export default function DemocracyPage() {
               {section.reverse ? (
                 <>
                   <div className="relative group md:order-last">
-                    <div className="absolute -inset-4 bg-gradient-to-l from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-l from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
                     <Image
                       src={section.image}
                       alt={section.titleLeading}
@@ -195,7 +195,7 @@ export default function DemocracyPage() {
                   <div className="space-y-6">
                     <div className="flex flex-wrap items-end gap-4">
                       <h3 className="font-quicksand text-4xl font-extrabold text-white lg:text-5xl">
-                        <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                           {section.titleLeading}
                         </span>
                       </h3>
@@ -205,7 +205,7 @@ export default function DemocracyPage() {
                         </span>
                       )}
                     </div>
-                    <div className="h-1 w-24 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full"></div>
+                    <div className="h-1 w-24 bg-linear-to-r from-[#f3c554] to-transparent rounded-full"></div>
                     <p className="font-quicksand text-lg font-medium text-[#d9d9d9]/90 leading-relaxed">
                       {section.copy}
                     </p>
@@ -214,7 +214,7 @@ export default function DemocracyPage() {
               ) : (
                 <>
                   <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
                     <Image
                       src={section.image}
                       alt={section.titleLeading}
@@ -226,7 +226,7 @@ export default function DemocracyPage() {
                   <div className="space-y-6">
                     <div className="flex flex-wrap items-end gap-4">
                       <h3 className="font-quicksand text-4xl font-extrabold text-white lg:text-5xl">
-                        <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                           {section.titleLeading}
                         </span>
                       </h3>
@@ -236,7 +236,7 @@ export default function DemocracyPage() {
                         </span>
                       )}
                     </div>
-                    <div className="h-1 w-24 bg-gradient-to-r from-[#f3c554] to-transparent rounded-full"></div>
+                    <div className="h-1 w-24 bg-linear-to-r from-[#f3c554] to-transparent rounded-full"></div>
                     <p className="font-quicksand text-lg font-medium text-[#d9d9d9]/90 leading-relaxed">
                       {section.copy}
                     </p>
@@ -259,22 +259,22 @@ export default function DemocracyPage() {
         >
           <div className="text-center">
             <h2 className="font-quicksand text-4xl font-extrabold text-white lg:text-6xl mb-6">
-              <span className="bg-gradient-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
+              <span className="bg-linear-to-r from-[#f3c554] via-[#ffd966] to-[#f3c554] bg-clip-text text-transparent animate-gradient">
                 BẢN CHẤT CỦA NỀN DÂN CHỦ
                 <br />
                 XHCN Ở VIỆT NAM
               </span>
             </h2>
-            <div className="h-1.5 w-48 bg-gradient-to-r from-transparent via-[#f3c554] to-transparent rounded-full mx-auto"></div>
+            <div className="h-1.5 w-48 bg-linear-to-r from-transparent via-[#f3c554] to-transparent rounded-full mx-auto"></div>
           </div>
 
-          <div className="grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-3xl border border-white/10">
+          <div className="grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-linear-to-br from-black/40 to-black/20 p-8 rounded-3xl border border-white/10">
             <p className="font-quicksand text-2xl font-medium text-[#d9d9d9]/90 leading-relaxed lg:text-3xl">
               Dân chủ xã hội chủ nghĩa là quyền lực thuộc về nhân dân, thực hiện
               quyền làm chủ trên cơ sở gắn với lợi ích chung.
             </p>
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-l from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+              <div className="absolute -inset-4 bg-linear-to-l from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
               <Image
                 src="/assets/dan-chu/06c024ebbcf0eb3a1261c190bfcbefe2c67b3e6c.png"
                 alt="Lãnh đạo và nhân dân"
@@ -293,7 +293,7 @@ export default function DemocracyPage() {
               key={pillar.title}
               id={`pillar-${index}`}
               data-animate
-              className={`grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-3xl border border-white/10 transition-all duration-1000 ${
+              className={`grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-linear-to-br from-black/40 to-black/20 p-8 rounded-3xl border border-white/10 transition-all duration-1000 ${
                 isVisible[`pillar-${index}`]
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 translate-x-10"
@@ -303,9 +303,9 @@ export default function DemocracyPage() {
                 <>
                   <div className="space-y-6 md:order-last">
                     <div className="flex items-center gap-3">
-                      <div className="h-12 w-1.5 bg-gradient-to-b from-[#f3c554] to-[#ffd966] rounded-full"></div>
+                      <div className="h-12 w-1.5 bg-linear-to-b from-[#f3c554] to-[#ffd966] rounded-full"></div>
                       <h3 className="font-quicksand text-3xl font-extrabold text-white lg:text-4xl">
-                        <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                           {pillar.title}
                         </span>
                       </h3>
@@ -326,7 +326,7 @@ export default function DemocracyPage() {
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
                     <Image
                       src={pillar.image}
                       alt={pillar.title}
@@ -339,7 +339,7 @@ export default function DemocracyPage() {
               ) : (
                 <>
                   <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+                    <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
                     <Image
                       src={pillar.image}
                       alt={pillar.title}
@@ -350,9 +350,9 @@ export default function DemocracyPage() {
                   </div>
                   <div className="space-y-6">
                     <div className="flex items-center gap-3">
-                      <div className="h-12 w-1.5 bg-gradient-to-b from-[#f3c554] to-[#ffd966] rounded-full"></div>
+                      <div className="h-12 w-1.5 bg-linear-to-b from-[#f3c554] to-[#ffd966] rounded-full"></div>
                       <h3 className="font-quicksand text-3xl font-extrabold text-white lg:text-4xl">
-                        <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                           {pillar.title}
                         </span>
                       </h3>
@@ -382,14 +382,14 @@ export default function DemocracyPage() {
         <section
           id="phuong-cham"
           data-animate
-          className={`grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-3xl border border-white/10 transition-all duration-1000 ${
+          className={`grid items-center gap-12 md:grid-cols-2 backdrop-blur-sm bg-linear-to-br from-black/40 to-black/20 p-8 rounded-3xl border border-white/10 transition-all duration-1000 ${
             isVisible["phuong-cham"]
               ? "opacity-100 scale-100"
               : "opacity-0 scale-95"
           }`}
         >
           <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
+            <div className="absolute -inset-4 bg-linear-to-r from-[#f3c554]/20 to-transparent rounded-3xl blur-xl"></div>
             <Image
               src="/assets/dan-chu/c3785689e2f97c3392370180fa5313b40b256b5e.png"
               alt="Làm việc trong hội nghị"
@@ -400,7 +400,7 @@ export default function DemocracyPage() {
           </div>
           <div className="space-y-6">
             <h3 className="font-quicksand text-4xl font-extrabold text-white">
-              <span className="bg-gradient-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#f3c554] to-[#ffd966] bg-clip-text text-transparent">
                 Thực hiện phương châm:
               </span>
             </h3>
@@ -424,7 +424,7 @@ export default function DemocracyPage() {
                   key={i}
                   className="flex items-start gap-4 p-4 rounded-xl bg-black/30 border-l-4 border-[#f3c554] hover:bg-black/40 transition-all"
                 >
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#f3c554] flex items-center justify-center font-bold text-black text-sm">
+                  <div className="shrink-0 w-8 h-8 rounded-full bg-[#f3c554] flex items-center justify-center font-bold text-black text-sm">
                     {i + 1}
                   </div>
                   <p>
@@ -440,9 +440,9 @@ export default function DemocracyPage() {
         </section>
 
         {/* CTA Section */}
-        {/* <section className="text-center backdrop-blur-sm bg-gradient-to-r from-[#f3c554]/10 to-[#ffd966]/10 p-8 rounded-3xl border-2 border-[#f3c554]/30">
+        {/* <section className="text-center backdrop-blur-sm bg-linear-to-r from-[#f3c554]/10 to-[#ffd966]/10 p-8 rounded-3xl border-2 border-[#f3c554]/30">
           <Link
-            className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#f3c554] to-[#ffd966] px-8 py-4 font-inter text-lg font-bold text-black hover:shadow-2xl hover:shadow-[#f3c554]/50 hover:-translate-y-1 transition-all"
+            className="inline-flex items-center gap-3 rounded-xl bg-linear-to-r from-[#f3c554] to-[#ffd966] px-8 py-4 font-inter text-lg font-bold text-black hover:shadow-2xl hover:shadow-[#f3c554]/50 hover:-translate-y-1 transition-all"
             href="/nha-nuoc-xa-hoi-chu-nghia"
           >
             <span>Tìm hiểu về Nhà nước pháp quyền XHCN</span>

@@ -24,7 +24,7 @@ export function ReviewMode({
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-gradient-to-r  from-white/5 to-white/0 p-6">
+      <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-linear-to-r  from-white/5 to-white/0 p-6">
         <div>
           <h2 className="font-quicksand text-2xl font-bold text-white">
             Xem lại đáp án
@@ -69,7 +69,7 @@ export function ReviewMode({
       <div className="flex justify-center">
         <button
           onClick={onClose}
-          className="rounded-xl bg-gradient-to-r from-[#f3c554] to-[#ffd966] px-8 py-4 font-semibold text-black transition-all hover:shadow-2xl hover:shadow-[#f3c554]/50"
+          className="rounded-xl bg-linear-to-r from-[#f3c554] to-[#ffd966] px-8 py-4 font-semibold text-black transition-all hover:shadow-2xl hover:shadow-[#f3c554]/50"
         >
           Quay lại kết quả
         </button>
