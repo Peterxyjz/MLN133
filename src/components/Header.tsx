@@ -183,8 +183,6 @@ export function Header({ currentPath = "" }: HeaderProps) {
             </nav>
           </div>
         ) : null}
-
-        {/* audio player is handled by MusicProvider (mounted at layout) */}
       </div>
     </header>
   );

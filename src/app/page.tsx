@@ -569,7 +569,7 @@ export default function Home() {
         </div>
       </main>
 
-      <Footer backgroundImage="/assets/home/111_183.svg" />
+      <Footer className="bg-[#694030]/80 backdrop-blur-sm border-t border-white/10 relative z-10" />
     </div>
   );
 }

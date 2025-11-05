@@ -91,13 +91,14 @@ export default function PromoteDemocracyPage() {
     <div
       className="min-h-screen bg-[#121212] text-[#d9d9d9] relative overflow-hidden"
       style={{
-        backgroundImage: "url('/assets/common/dark-bg.png')",
+        backgroundImage:
+          "url('/assets/ban-co-biet/4a22a5e0295e170d8bbbfa3301b17b33dd1e379a.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-black/50 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black/80 pointer-events-none"></div>
 
       <Header currentPath="/phat-huy-va-xay-dung" />
 
@@ -331,7 +332,7 @@ export default function PromoteDemocracyPage() {
         </section>
       </main>
 
-      <Footer className="bg-[#694030]/80 backdrop-blur-sm border-t border-white/10 relative z-10" />
+      <Footer backgroundImage="/assets/home/111_183.svg" />
     </div>
   );
 }

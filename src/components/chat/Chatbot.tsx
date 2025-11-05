@@ -371,7 +371,7 @@ HÃY TRẢ LỜI (ngắn gọn, dễ hiểu, có emoji phù hợp):`;
                 title="Gửi tin nhắn"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-5 w-5 rotate-90"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

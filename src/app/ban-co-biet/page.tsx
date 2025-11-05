@@ -66,7 +66,7 @@ export default function DidYouKnowPage() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/70 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black/80 pointer-events-none"></div>
 
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -270,7 +270,7 @@ export default function DidYouKnowPage() {
         </section> */}
       </main>
 
-      <Footer className="bg-[#694030]/80 backdrop-blur-sm border-t border-white/10 relative z-10" />
+      <Footer backgroundImage="/assets/home/111_183.svg" />
     </div>
   );
 }

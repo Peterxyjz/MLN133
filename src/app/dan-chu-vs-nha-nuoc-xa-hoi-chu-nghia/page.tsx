@@ -100,13 +100,14 @@ export default function DemocracyPage() {
     <div
       className="min-h-screen bg-[#121212] text-[#d9d9d9] relative overflow-hidden"
       style={{
-        backgroundImage: "url('/assets/common/dark-bg.png')",
+        backgroundImage:
+          "url('/assets/ban-co-biet/4a22a5e0295e170d8bbbfa3301b17b33dd1e379a.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black/60 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black/80 pointer-events-none"></div>
 
       <Header currentPath="/dan-chu-vs-nha-nuoc-xa-hoi-chu-nghia" />
 
