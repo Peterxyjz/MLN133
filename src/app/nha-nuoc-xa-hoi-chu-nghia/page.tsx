@@ -100,7 +100,7 @@ export default function SocialistStatePage() {
                 alt="Nhà nước xã hội chủ nghĩa"
                 width={1000}
                 height={1000}
-                className="relative h-auto w-full  rounded-2xl shadow-2xl border-4 border-[#f3c554]/20 transform group-hover:scale-105 transition-all duration-500"
+                className="relative h-auto w-full min-w-xl rounded-2xl shadow-2xl border-4 border-[#f3c554]/20 transform group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function SocialistStatePage() {
                 alt="Hồ Chí Minh cùng công nhân"
                 width={1000}
                 height={1000}
-                className="relative h-auto w-full  shadow-2xl rounded-2xl border-2 border-white/10 transform group-hover:scale-105 transition-all duration-500"
+                className="relative h-auto w-full min-w-xl shadow-2xl rounded-2xl border-2 border-white/10 transform group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -232,7 +232,7 @@ export default function SocialistStatePage() {
                 alt="Phát biểu trong hội trường"
                 width={1000}
                 height={1000}
-                className="relative rounded-2xl border-2 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500"
+                className="relative h-auto w-full min-w-xl rounded-2xl border-2 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -344,7 +344,7 @@ export default function SocialistStatePage() {
                 alt="Người dân lao động"
                 width={900}
                 height={800}
-                className="relative h-auto w-full rounded-2xl border-2 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500"
+                className="relative h-auto w-full min-w-xl rounded-2xl border-2 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
