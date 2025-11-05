@@ -145,7 +145,7 @@ export default function QuizPage() {
 
   return (
     <div
-      className="min-h-screen bg-[#121212] text-[#d9d9d9] relative overflow-hidden"
+      className="min-h-screen bg-[#0a0a0a]"
       style={{
         backgroundImage:
           "url('/assets/ban-co-biet/4a22a5e0295e170d8bbbfa3301b17b33dd1e379a.png')",
@@ -154,11 +154,10 @@ export default function QuizPage() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/70 pointer-events-none"></div>
       <Header currentPath="/quiz" />
 
       <main className="relative min-h-[calc(100vh-180px)]">
-        <div className="absolute inset-0 bg-[#0a0a0a]/75" />
+        <div className="absolute inset-0 bg-[#0a0a0a]/95" />
 
         <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           {/* Mode Selection Stage */}

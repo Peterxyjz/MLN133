@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* Main Content */}
-      <main className="relative bg-[#0a0a0a]">
+      <main className="relative bg-[#121212]/70">
         <div className="absolute inset-0 bg-[url('/assets/common/light-bg.png')] bg-cover bg-repeat opacity-5" />
 
         <div className="relative mx-auto max-w-7xl space-y-24 px-4 py-20 sm:px-6 lg:px-8">
@@ -339,7 +339,7 @@ export default function Home() {
           {/* Section 2: Dân chủ XHCN */}
           <section className="group">
             <div className="grid items-center gap-12 lg:grid-cols-2">
-              <div className="space-y-6 lg:order-2">
+              <div className="space-y-6">
                 <div className="inline-block rounded-full bg-linear-to-r from-[#f3c554]/20 to-[#f3c554]/5 px-4 py-1.5">
                   <span className="font-inter text-sm font-bold text-[#f3c554]">
                     2. DÂN CHỦ XÃ HỘI CHỦ NGHĨA Ở VIỆT NAM
@@ -384,7 +384,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="relative overflow-hidden rounded-2xl lg:order-1">
+              <div className="relative overflow-hidden rounded-2xl">
                 <div className="absolute inset-0 bg-linear-to-br from-[#f3c554]/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 <Image
                   src="/assets/home/eb99ea30633a5219e9dbae9a80ebe822f12fc77d.png"
@@ -569,7 +569,7 @@ export default function Home() {
         </div>
       </main>
 
-      <Footer className="bg-[#694030]/80 backdrop-blur-sm border-t border-white/10 relative z-10" />
+      <Footer backgroundImage="/assets/home/111_183.svg" />
     </div>
   );
 }

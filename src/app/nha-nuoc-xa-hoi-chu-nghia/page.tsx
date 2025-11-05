@@ -98,9 +98,9 @@ export default function SocialistStatePage() {
               <Image
                 src="/assets/nha-nuoc/0bdfa266c75b9f1c8241978bef018799391fa4cd.png"
                 alt="Nhà nước xã hội chủ nghĩa"
-                width={700}
-                height={600}
-                className="relative h-auto w-full max-w-md rounded-2xl shadow-2xl border-4 border-[#f3c554]/20 transform group-hover:scale-105 transition-all duration-500"
+                width={900}
+                height={800}
+                className="relative h-auto w-full  rounded-2xl shadow-2xl border-4 border-[#f3c554]/20 transform group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -151,9 +151,9 @@ export default function SocialistStatePage() {
               <Image
                 src="/assets/nha-nuoc/0dc05d56e6cc73f05c60cefde74f95e8ffdbf9f1.png"
                 alt="Hồ Chí Minh cùng công nhân"
-                width={700}
-                height={600}
-                className="relative h-auto w-full max-w-md shadow-2xl rounded-2xl border-2 border-white/10 transform group-hover:scale-105 transition-all duration-500"
+                width={900}
+                height={800}
+                className="relative h-auto w-full  shadow-2xl rounded-2xl border-2 border-white/10 transform group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -199,8 +199,8 @@ export default function SocialistStatePage() {
                 <Image
                   src={src}
                   alt={`Chức năng ${index + 1}`}
-                  width={400}
-                  height={400}
+                  width={600}
+                  height={600}
                   className="h-full w-full object-cover transform group-hover:scale-110 transition-all duration-700"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
@@ -230,9 +230,9 @@ export default function SocialistStatePage() {
               <Image
                 src="/assets/nha-nuoc/956fe3b5f2118e59e3d061758c77cd819ce18f66.png"
                 alt="Phát biểu trong hội trường"
-                width={700}
-                height={600}
-                className="relative h-auto w-full max-w-md rounded-2xl border-2 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500"
+                width={1000}
+                height={1000}
+                className="relative rounded-2xl border-2 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -342,9 +342,9 @@ export default function SocialistStatePage() {
               <Image
                 src="/assets/nha-nuoc/f2780d9086654d1f6434d66de101ec9fd7af9811.png"
                 alt="Người dân lao động"
-                width={700}
-                height={600}
-                className="relative h-auto w-full max-w-md rounded-2xl border-2 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500"
+                width={900}
+                height={800}
+                className="relative h-auto w-full rounded-2xl border-2 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>

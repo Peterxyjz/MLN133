@@ -27,9 +27,6 @@ export function Header({ currentPath = "" }: HeaderProps) {
         <div className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-[#f3c554]/60 via-transparent to-[#f3c554]/60" />
         <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:h-24 sm:px-6 lg:px-8">
           <Link href="/" className="group flex items-center gap-3">
-            <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-linear-to-br from-[#f3c554] to-[#e3a645] text-base font-semibold text-black shadow-lg shadow-[#f3c554]/30">
-              4
-            </span>
             <span className="flex flex-col">
               <span className="font-inter text-xs uppercase tracking-[0.2em] text-white/55">
                 MLN131
